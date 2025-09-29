@@ -4,15 +4,10 @@
   "description": "Portfólio de edição de vídeo para Marcelo Gomes",
   "main": "index.js",
   "scripts": {
-    "build": "esbuild index.tsx --bundle --outfile=dist/bundle.js --loader:.js=jsx --jsx=automatic",
-    "start": "http-server ./ -p 8080",
     "dev": "vite",
-    "deploy": "gh-pages -d dist",
-    "predeploy": "npm run build"
-  },
-  "dependencies": {
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
@@ -21,6 +16,8 @@
     "esbuild": "^0.23.0",
     "gh-pages": "^6.3.0",
     "http-server": "^14.1.1",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
     "typescript": "^5.5.4",
     "vite": "^7.1.7"
   }
